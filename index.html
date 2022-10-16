@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="title">Looks Like It's a Draw!</div>
+            <button class="modalButton">Grid Size</button>
+            <button class="clear">Clear</button>
+            <button class="eraser">Eraser</button>
+            <input type="color" id="color" name="color">
+            <div class="sizeModal">
+                <div class="modal-content">
+                    <div id="modal-title">Grid Dimensions</div>
+                    <form>
+                        <div class="row-controls">
+                            <input type="text" id="rowSize" name="rowSize">
+                            <label for="rowSize">How many rows?</label>
+                        </div>
+                        <div class="column-controls">
+                            <input type="text" id="columnSize" name="columnSize">
+                            <label for="columnSize">How many columns?</label>
+                        </div>
+                    </form>
+                    <div class="modal-bottom">
+                        <button type="submit" class="create">Create Grid</button>
+                        <span class="closeButton">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas"></div>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
