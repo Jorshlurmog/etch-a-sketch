@@ -23,6 +23,8 @@ const changeColor = () => {
     })
 }
 
+
+// creates the area which can be drawn on
 const createCanvas = () => {
     const rowSize = document.querySelector('#rowSize').value;
     const columnSize = document.querySelector('#columnSize').value;
